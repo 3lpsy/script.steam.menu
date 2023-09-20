@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: RetroArch Menu Launcher
-# Addon id: script.retroarch.menu
+# Addon Name: Steam Menu Launcher
+# Addon id: script.steam.menu
 # Addon Provider: amverweij
 msgid ""
 msgstr ""
@@ -17,8 +17,8 @@ msgstr "General"
 #
 
 msgctxt "#32002"
-msgid "Command to start RetroArch"
-msgstr "Command to start RetroArch"
+msgid "Command to start steam"
+msgstr "Command to start steam"
 
 msgctxt "#32003"
 msgid "Command to stop Kodi"

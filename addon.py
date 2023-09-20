@@ -2,18 +2,18 @@ import xbmcaddon
 import xbmcvfs
 import subprocess
 
-addonPath = xbmcaddon.Addon('script.retroarch.menu').getAddonInfo('path')
+addonPath = xbmcaddon.Addon('script.steam.menu').getAddonInfo('path')
 
-startRetroarchCommand = xbmcaddon.Addon('script.retroarch.menu').getSettingString('start-retroarch')
-stopKodiCommand = xbmcaddon.Addon('script.retroarch.menu').getSettingString('stop-kodi')
-restartKodiCommand = xbmcaddon.Addon('script.retroarch.menu').getSettingString('restart-kodi')
+startSteamCommand = xbmcaddon.Addon('script.steam.menu').getSettingString('start-steam')
+stopKodiCommand = xbmcaddon.Addon('script.steam.menu').getSettingString('stop-kodi')
+restartKodiCommand = xbmcaddon.Addon('script.steam.menu').getSettingString('restart-kodi')
 
-logFile = xbmcvfs.translatePath('special://temp/retroarch.log')
+logFile = xbmcvfs.translatePath('special://temp/steam.log')
 
 subprocess.Popen([
     '/bin/bash', 
-    addonPath + 'resources/bin/retroarch.sh', 
-    startRetroarchCommand, 
+    addonPath + 'resources/bin/steam.sh', 
+    startSteamCommand, 
     stopKodiCommand, 
     restartKodiCommand, 
     logFile
