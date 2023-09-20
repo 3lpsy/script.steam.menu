@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32001">
+        <setting label="32002" type="text" id="start-retroarch" default="sudo systemctl restart retroarch-wayland"/>
+        <setting label="32003" type="text" id="stop-kodi" default="kodi-send -a Quit && sleep 4s"/>
+        <setting label="32004" type="text" id="restart-kodi" default="sudo systemctl restart kodi-wayland"/>
+    </category>
+</settings>
